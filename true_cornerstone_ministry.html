@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>True CornerStone Ministry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Dropdown hover for desktop */
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+
+    /* Transition for dropdown */
+    .dropdown-menu {
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    /* Hide scrollbar on dropdown */
+    .dropdown-menu::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Home Section -->
+<!-- Sticky Navbar -->
+<header class="sticky top-0 z-50 bg-black bg-opacity-60 text-white backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="logo.png" alt="True Cornerstone Ministry" class="w-10 h-10 rounded-full" />
+      <span class="font-bold text-lg">True Cornerstone Ministry</span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 font-semibold">
+      <a href="#about-us" class="block hover:underline">About Us</a>
+      <a href="#sermons" class="hover:underline">Sermons</a>
+      <a href="#location" class="hover:underline">Location</a>
+      <a href="#give" class="hover:underline">Give</a>
+      <a href="#prayerline" class="hover:underline">Prayerline</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 font-semibold">
+    <a href="#about-us" class="block hover:underline">About Us</a>
+    <a href="#sermons" class="block hover:underline">Sermons</a>
+    <a href="#location" class="block hover:underline">Location</a>
+    <a href="#give" class="block hover:underline">Give</a>
+    <a href="#prayerline" class="block hover:underline">Prayerline</a>
+    <a href="#contact" class="block hover:underline">Contact</a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="relative w-full h-[130vh] overflow-hidden">
+  <!-- Background Image -->
+  <img
+    src="11.jpg"
+    alt="Welcome to Our Church"
+    class="w-full h-full object-cover object-center"
+    loading="lazy"
+  />
+
+  <!-- Hero Text & CTA at Bottom -->
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center px-4">
+  <h1 class="text-3xl md:text-5xl font-bold mb-3">Welcome to True Cornerstone Ministry</h1>
+  <a
+    href="#about-us"
+    class="bg-white text-blue-700 px-6 py-3 rounded-full hover:bg-gray-100 transition"
+  >
+    Learn More
+  </a>
+</div>
+
+</section>
+
+<!-- JavaScript for mobile toggle -->
+<script>
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+ <section id="about-us" class="py-20">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h2 class="text-3xl font-bold text-center mb-8">Who We Are</h2>
+    <p class="text-lg text-center mb-8">
+      True CornerStone Ministry is a Christ-centered community dedicated to worship, fellowship, and serving others. We believe in growing in faith, loving one another, and reaching out to our community with compassion.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px]">
+      
+      <!-- Column 1 with two stacked images -->
+      <div class="flex flex-col gap-4 h-full">
+        <img
+          src="55.JPG"
+          alt="Church Community"
+          class="rounded-lg shadow-md object-cover w-full h-1/2"
+        />
+        <img
+          src="12.JPG"
+          alt="Community Service"
+          class="rounded-lg shadow-md object-cover w-full h-1/2"
+        />
+      </div>
+
+      <!-- Column 2 -->
+      <img
+        src="MM.JPG"
+        alt="Worship Service"
+        class="rounded-lg shadow-md object-cover w-full h-full"
+      />
+
+      <!-- Column 3 -->
+      <img
+        src="AA.JPG"
+        alt="Fellowship"
+        class="rounded-lg shadow-md object-cover w-full h-full"
+      />
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="leadership" class="bg-[#f8f9fa] py-20">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Leadership Team</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-center items-center">
+      
+      <!-- Leader 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="w-52 h-52 mx-auto rounded-full overflow-hidden shadow-xl">
+          <img
+            src="AP.JPG"
+            alt="Apostle Justice Mota"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <h3 class="text-xl font-semibold mt-4 text-gray-800">Apostle Justice Mota</h3>
+        <p class="text-gray-600 mt-1">Overseer</p>
+        <p class="mt-2 text-sm max-w-xs mx-auto text-gray-600">Leading the ministry with passion and vision for over 20 years.</p>
+      </div>
+
+      <!-- Leader 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="w-52 h-52 mx-auto rounded-full overflow-hidden shadow-xl">
+          <img
+            src="Ev.JPG"
+            alt="Ev Makatleho Mota"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <h3 class="text-xl font-semibold mt-4 text-gray-800">Ev Makatleho Mota</h3>
+        <p class="text-gray-600 mt-1">Overseer</p>
+        <p class="mt-2 text-sm max-w-xs mx-auto text-gray-600">Inspiring hearts through prayer and the Word.</p>
+      </div>
+
+    </div>
+
+    <!-- Vision Text -->
+    <div class="mt-12 text-center max-w-2xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4 text-gray-800">Our Vision</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        To raise a Christ-centered generation empowered by the Holy Spirit to transform communities, impact nations, and live in the fullness of God’s purpose.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="history" class="py-20">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-8">History & Vision</h2>
+      <p class="max-w-3xl mx-auto text-center text-lg mb-6">
+        Founded in 2020, True CornerStone Ministry has grown to be a beacon of hope and faith in our community. Over the years, we have expanded our outreach programs, strengthened our worship services, and fostered a loving community.
+      </p>
+      <p class="max-w-3xl mx-auto text-center text-lg">
+        Our vision is to see lives transformed by the power of Christ, impacting families, neighborhoods, and beyond with the message of hope and grace.
+      </p>
+    </div>
+  </section>
+
+ <!-- Sermons Section -->
+<section id="sermons" class="py-16 px-6 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-4">Sermons</h2>
+  <p class="max-w-2xl mx-auto mb-6">
+    Browse our latest sermons and be encouraged by the Word of God.
+  </p>
+
+  <!-- Video Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
+    <!-- Sermon 1 -->
+    <div class="aspect-video">
+      <iframe 
+        width="100%" 
+        height="100%" 
+        src="https://www.youtube.com/embed/0cfbly104ng" 
+        title="Sermon 1" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Sermon 2 -->
+    <div class="aspect-video">
+      <iframe 
+        width="100%" 
+        height="100%" 
+        src="https://www.youtube.com/embed/g3d6DVjVwsU" 
+        title="Sermon 2" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Watch More Button -->
+  <a 
+    href="https://www.youtube.com/@TrueCornerstoneTV" 
+    target="_blank"
+    class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+  >
+    Watch More Sermons
+  </a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+  <p class="max-w-xl mx-auto mb-6">
+    Reach out with any questions or prayer requests. We're here for you.
+  </p>
+
+  <!-- Success Message -->
+  <div id="success-message" class="hidden text-green-600 font-semibold mb-4">
+    ✅ Thank you! Your message has been sent. God bless you.
+  </div>
+
+  <form
+    id="contact-form"
+    action="https://formspree.io/f/meozabnv"
+    method="POST"
+    class="max-w-xl mx-auto grid gap-4"
+  >
+    <input type="text" name="name" placeholder="Your Name" required class="p-3 border rounded w-full" />
+    <input type="email" name="email" placeholder="Your Email" required class="p-3 border rounded w-full" />
+    <textarea name="message" placeholder="Message" required class="p-3 border rounded w-full"></textarea>
+    <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800">
+      Send Message
+    </button>
+  </form>
+</section>
+
+<!-- JS to Show Success Message -->
+<script>
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('success-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      successMessage.textContent = '✅ Thank you! Your message has been sent. God bless you.';
+      successMessage.classList.remove('hidden');
+    } else {
+      successMessage.textContent = '❌ There was an error. Please try again.';
+      successMessage.classList.remove('hidden');
+      successMessage.classList.replace('text-green-600', 'text-red-600');
+    }
+  });
+</script>
+
+<!-- Location Section -->
+<section id="location" class="py-16 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Location</h2>
+  <p class="max-w-xl mx-auto mb-6">
+    We meet every Sunday at 10:00 AM. Come worship with us at True Cornerstone Ministry, Ha Tsosane.
+  </p>
+
+  <!-- Google Map Embed for True Cornerstone Ministry, Ha Tsosane -->
+  <div class="max-w-4xl mx-auto aspect-video mb-6">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d347.22385972573943!2d27.538787896955107!3d-29.308838852019957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTrue%20Cornerstone%20Ministry%2C%20Ha%20Tsosane!5e1!3m2!1sen!2sls!4v1753352729114!5m2!1sen!2sls" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Get Directions Button -->
+  <a 
+    href="https://www.google.com/maps/dir/?api=1&destination=True+Cornerstone+Ministry,+Ha+Tsosane" 
+    target="_blank"
+    class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+  >
+    Get Directions
+  </a>
+</section>
+<!-- Prayerline Section -->
+<section id="prayerline" class="py-16 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Prayerline</h2>
+  <p class="max-w-xl mx-auto mb-6">
+    We are here to pray with you. Reach out to our prayer team or send your prayer request below.
+  </p>
+
+  <!-- WhatsApp Contact -->
+  <p class="text-lg font-semibold mb-2">📞 Call or WhatsApp:</p>
+  <p class="text-xl text-blue-700 font-bold mb-4">+266 58 000 000</p>
+
+  <a href="https://wa.me/26658000000" target="_blank" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition mb-10">
+    Message on WhatsApp
+  </a>
+
+<!-- Prayerline Section -->
+<section id="prayerline" class="py-16 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Prayerline</h2>
+  <p class="max-w-xl mx-auto mb-6 text-gray-700">
+    Submit your prayer requests and our intercessors will stand in faith with you.
+  </p>
+
+  <!-- Button linking to Google Form -->
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdSo2gHbJs31jI-VEJu93NbneA6kNqAkLQCyMV4_IMRtRb_DA/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+  >
+    Submit Prayer Request
+  </a>
+</section>
+
+
+
+ <!-- Give Section -->
+<section id="give" class="py-16 px-6 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-4">Give / Donate</h2>
+  <p class="max-w-2xl mx-auto mb-6">
+    Your generosity helps us serve our community and grow our ministry. You can give using the details below:
+  </p>
+
+  <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-6 text-left space-y-4">
+    <div>
+      <h3 class="font-semibold text-lg">📱 Mpesa Number</h3>
+      <p class="text-gray-700">+266 1234 5678</p>
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-lg">📱 Ecocash Number</h3>
+      <p class="text-gray-700">+266 8765 4321</p>
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-lg">🏦 Bank Account Number</h3>
+      <p class="text-gray-700">Bank: First National Bank<br />Account No: 1234567890<br />Branch Code: 012345</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-8 px-6 text-center">
+  <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+  
+  <div class="flex justify-center gap-6 mb-4 text-2xl">
+    <a href="https://web.facebook.com/MotaJustice" target="_blank" aria-label="Facebook" class="hover:text-blue-500">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/YOUR_PAGE" target="_blank" aria-label="Instagram" class="hover:text-pink-500">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@TrueCornerstoneTV" target="_blank" aria-label="YouTube" class="hover:text-red-500">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" aria-label="WhatsApp" class="hover:text-green-500">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.tiktok.com/@YOUR_USERNAME" target="_blank" aria-label="TikTok" class="hover:text-white">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+
+  <p class="text-sm text-gray-400">&copy; 2025 True Cornerstone Ministry. All rights reserved.</p>
+</footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // Smooth scroll helper function
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+      if (!menu.classList.contains("hidden")) {
+        menu.classList.add("hidden"); // close mobile menu on click
+      }
+    }
+
+    // Contact form submit handler
+    function submitContact(event) {
+      event.preventDefault();
+      const name = document.getElementById("contact-name").value.trim();
+      const email = document.getElementById("contact-email").value.trim();
+      const message = document.getElementById("contact-message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return;
+      }
+      alert("Thank you for your message! We will get back to you soon.");
+
+      // Reset form
+      document.getElementById("contact-name").value = "";
+      document.getElementById("contact-email").value = "";
+      document.getElementById("contact-message").value = "";
+    }
+  </script>
+
+</body>
+</html>
